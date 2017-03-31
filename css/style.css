@@ -1,0 +1,32 @@
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+}
+.sideWidth {
+    width: 90%;
+    margin: 0 auto;
+}
+.mainHeader {
+    background-color: #000;
+    overflow: auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.logo {
+    float: left;
+    color: #fff;
+}
+.wordColor {
+    color: #24baa0;
+}
+.navigation {
+    float: right;
+    color: #fff;
+}
+.navigation__list > * {
+    list-style: none;
+    display: inline-block;
+}
+.navigation__item {
+    margin-left: 2.5rem;
+}
