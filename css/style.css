@@ -1,35 +1,94 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Moje style*/
+
 body {
     font-family: 'Raleway', Arial, sans-serif;
 }
+
 .sideWidth {
     width: 90%;
     margin: 0 auto;
 }
+
+.uppercase {
+    text-transform: uppercase;
+}
+
 .wrapperHeader {
     background-color: #000;
     overflow: auto;
-    text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
+
 .logo {
     float: left;
     color: #fff;
 }
+
 .wordColor {
     color: #24baa0;
 }
+
 .navigation {
     float: right;
     color: #fff;
 }
+
 .navigation__list > * {
     list-style: none;
     display: inline-block;
 }
+
 .navigation__item {
     margin-left: 2.5rem;
 }
+
 .chairSection{
     background: rgba(255,255,255,1);
     background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,228,246,1) 100%);
@@ -40,52 +99,116 @@ body {
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(229,228,246,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e4f6', GradientType=0 );
 }
+
 .arrow {
     font-size: 5rem;
     color: #24baa0;
     position: absolute;
 }
+
 .arrowLeft {
     bottom: 9rem;
 }
+
 .blackChair {
     margin-left: 5rem;
 }
+
 .chairSection__wrapper {
     margin-top: 7rem;
     position: relative;
 }
+
 .chairSection__textWrapper {
     width: 30%;
     text-align: center;
     float: right;
     margin-right: 15rem;
 }
+
 .chairSection__title {
-    text-transform: uppercase;
     font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
 }
+
 .chairSection__text {
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
+    line-height: 1.5rem;
 }
+
 .button {
     background-color: #24baa0;
     color: #fff;
     border-radius: 5px;
 }
+
 .button--lookMore {
     width: 200px;
     height: 30px;
     padding-top: 12px;
     margin: 0 auto;
 }
+
 .button > a {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
     font-weight: 400;
 }
+
 .arrowRight {
     right: 0;
     bottom: 9rem;
 }
+
+.fotoSection__wrapper {
+    width: 90%;
+    margin: 2rem auto 5rem auto;
+}
+
+.fotoSection__item {
+    height: 225px;
+    width: 30%;
+    background-size: cover;
+    padding-top: 9rem;
+    box-sizing: border-box;
+    float: left;
+}
+.fotoSection__item--box1 {
+    background-image: url('../images/box1_img.jpg');
+}
+
+.fotoSection__item--box2 {
+    background-image: url('../images/box2_img.jpg');
+    margin-left: 5%;
+}
+
+.fotoSection__item--box3 {
+    background-image: url('../images/box1_img.jpg');
+    float: right;
+}
+
+.fotoSection__decoration {
+    background-color: rgba(250, 250, 250, 0.5);
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.fotoSection__boxTitle {
+    font-weight: 700;
+    margin-left: 0.7rem;
+    position: relative;
+}
+
+.fotoSection__boxTitle::after {
+    content: " ";
+    background-color: #24baa0;
+    width: 8.5rem;
+    height: 0.5rem;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -0.7rem;
+}
+
