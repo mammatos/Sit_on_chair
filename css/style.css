@@ -57,6 +57,16 @@ body {
     text-transform: uppercase;
 }
 
+.clearFloating::after {
+    clear: both;
+    display: block;
+    content: " ";
+}
+
+.wordColor {
+    color: #24baa0;
+}
+
 .wrapperHeader {
     background-color: #000;
     overflow: auto;
@@ -69,10 +79,6 @@ body {
 .logo {
     float: left;
     color: #fff;
-}
-
-.wordColor {
-    color: #24baa0;
 }
 
 .navigation {
@@ -201,7 +207,7 @@ body {
     position: relative;
 }
 
-.fotoSection__boxTitle::after {
+.underline::after {
     content: " ";
     background-color: #24baa0;
     width: 8.5rem;
@@ -210,5 +216,128 @@ body {
     position: absolute;
     left: 0;
     bottom: -0.7rem;
+}
+
+.cardSection {
+    background-color: #F1F1F1;
+}
+
+.card {
+    margin-top: 5rem;
+    border: 2px solid #C1C1C1;
+    width: 30%;
+    height: 30rem;
+    padding: 2rem 0;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    float: left;
+    background-color: #fff;
+    overflow: visible;
+}
+
+.card2 {
+    margin-left: 5%;
+}
+
+.card3 {
+    float: right;
+}
+
+.circle1 {
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 3px solid #C1C1C1;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: calc((100% - 4.5rem) / 2);
+    top: -3.5rem;
+}
+
+.circle2 {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #C1C1C1;
+    position: absolute;
+    z-index: 1;
+    top: -2.2rem;
+    left: calc((100% - 2rem) / 2); 
+    border: 3px solid #C1C1C1;
+}
+
+.circle3 {
+    width: 8rem;
+    height: 8rem;
+    border: 3px solid #C1C1C1;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    left: calc((100% - 8rem) / 2);
+    top: 1rem;
+}
+
+.price {
+    color: #BFBFBF;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.price + p {
+    color: #BFBFBF;
+    font-weight: 700;
+}
+
+.index {
+    vertical-align: super;
+    font-size: 1rem;
+}
+
+.cardTitle {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color: #24baa0;
+    letter-spacing: -1px;
+}
+
+.cardText__wrapper{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.cardText {
+    color: #A6A6A6;
+    font-size: 1.4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.cardText__wrapper p:nth-of-type(odd) {
+    background-color: #E4E4E4;
+}
+
+.cardText__wrapper p:nth-of-type(even) {
+    background-color: #F9F9F9;
+}
+
+.cardButton {
+    background-color: #24baa0;;
+    width: 35%;
+    margin: auto;
+    border-radius: 10px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    position: absolute;
+    top: 26.5rem;
+    right: 7rem;
+}
+
+.buttonText {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
 }
 
