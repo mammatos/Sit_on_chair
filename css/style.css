@@ -219,6 +219,54 @@ body {
     box-sizing: border-box;
     float: left;
 }
+
+.fotoSection__item:hover {
+    background-image: none;
+    border: 1px solid #DBDBDB;
+}
+
+.fotoSection__item:hover .visiblePart {
+    opacity: 0;
+}
+
+.hoverPart {
+    position: relative;
+    color: #9C9C9C;
+    bottom: 14rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.hoverPart:hover {
+    opacity: 1;
+}
+
+.hoverPart__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.hoverPart__title::after {
+    content: " ";
+    background-color: #24baa0;
+    width: 10rem;
+    height: 0.5rem;
+    display: inline-block;
+    position: absolute;
+    top: 3.2rem;
+    right: 11.2rem;
+}
+
+.hoverPart__text {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
 .fotoSection__item--box1 {
     background-image: url('../images/box1_img.jpg');
 }
