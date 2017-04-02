@@ -1,3 +1,7 @@
+/*--------------------//
+//     Reset CSS      //
+//--------------------*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,7 +46,9 @@ table {
 	border-spacing: 0;
 }
 
-/*Moje style*/
+/*--------------------//
+//   Style wspólne    //
+//--------------------*/
 
 body {
     font-family: 'Raleway', Arial, sans-serif;
@@ -66,6 +72,28 @@ body {
 .wordColor {
     color: #24baa0;
 }
+
+.sectionTitle {
+    color: #666666;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.sectionTitleUnderline::after {
+    content: " ";
+    background-color: #24baa0;
+    width: 30%;
+    height: 0.5rem;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 5rem;
+}
+
+/*-----------------------//
+//   Style indywidualne  //
+//-----------------------*/
+
 
 .wrapperHeader {
     background-color: #000;
@@ -228,23 +256,6 @@ body {
     padding-bottom: 4rem;
 }
 
-.cardSection__title {
-    color: #9F9F9F;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.cardSection__title__underline::after {
-    content: " ";
-    background-color: #24baa0;
-    width: 30%;
-    height: 0.5rem;
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    top: 5rem;
-}
-
 .card {
     margin-top: 5rem;
     border: 2px solid #C1C1C1;
@@ -385,11 +396,68 @@ body {
 }
 
 .buttonText {
-    color: white;
+    color: #fff;
     text-decoration: none;
     display: inline-block;
 }
 
 .buttonText--color {
     color: #24baa0;
+}
+
+.formSection__wrapper {
+    position: relative;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.inputWrapper {
+    position: relative;
+}
+
+.input {
+    width: 45rem;
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 300;
+    line-height: 3rem;
+    border: 1px solid #24baa0;
+}
+
+.formSection__image {
+    position: absolute;
+    right: 7rem;
+}
+
+.checkWrapper {
+    float: right;
+    width: 35%;
+    margin-top: 5rem;
+}
+
+.checkbox {
+    width: 3rem;
+    height: 3rem;
+}
+
+.checkText {
+    font-size: 1.5rem;
+    display: inline-block;
+    float: right;
+    width: 85%;
+}
+
+.inputSubmit {
+    width: 95%;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #24baa0;
+    border-radius: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
 }
