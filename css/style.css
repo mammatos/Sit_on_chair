@@ -46,6 +46,10 @@ table {
 	border-spacing: 0;
 }
 
+.mainFontColor {
+    color: #24baa0;
+}
+
 /*--------------------//
 //   Style wspólne    //
 //--------------------*/
@@ -347,6 +351,10 @@ body {
 .price + p {
     color: #BFBFBF;
     font-weight: 700;
+}
+
+p.mainFontColor {
+    color: #24baa0;
 }
 
 .index {
