@@ -90,6 +90,10 @@ body {
     top: 5rem;
 }
 
+.weightWord {
+    font-weight: 700;
+}
+
 /*-----------------------//
 //   Style indywidualne  //
 //-----------------------*/
@@ -447,6 +451,7 @@ body {
     display: inline-block;
     float: right;
     width: 85%;
+    color: #BFBFBF;
 }
 
 .inputSubmit {
@@ -460,4 +465,34 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: 3rem;
+}
+
+.footer {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    color: #9C9C9C;
+    letter-spacing: 1px;
+}
+
+.copyright {
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-top: 0.7rem;
+}
+
+.socialWrapper {
+    float: right;
+    width: 35%;
+}
+
+.socialIcon {
+    margin-right: 0.3rem;
+}
+
+.footer__logo {
+    float: right;
+    font-size: 1.2rem;
+    margin-top: 0.6rem;
+    margin-right: 1rem;
 }
