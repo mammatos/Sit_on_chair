@@ -207,7 +207,7 @@ body {
     position: relative;
 }
 
-.underline::after {
+.boxTitle__underline::after {
     content: " ";
     background-color: #24baa0;
     width: 8.5rem;
@@ -222,6 +222,29 @@ body {
     background-color: #F1F1F1;
 }
 
+.cardSection__wrapper {
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.cardSection__title {
+    color: #9F9F9F;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cardSection__title__underline::after {
+    content: " ";
+    background-color: #24baa0;
+    width: 30%;
+    height: 0.5rem;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 5rem;
+}
+
 .card {
     margin-top: 5rem;
     border: 2px solid #C1C1C1;
@@ -233,7 +256,11 @@ body {
     position: relative;
     float: left;
     background-color: #fff;
-    overflow: visible;
+}
+
+.cardSection__wrapper .card:nth-of-type(even) {
+    border: 2px solid #24baa0;
+    background-color: #24baa0;
 }
 
 .card2 {
@@ -255,6 +282,11 @@ body {
     top: -3.5rem;
 }
 
+.circle1--color {
+    background-color: #24baa0;
+    border: 3px solid #24baa0;
+}
+
 .circle2 {
     width: 2rem;
     height: 2rem;
@@ -267,6 +299,11 @@ body {
     border: 3px solid #C1C1C1;
 }
 
+.circle2--color {
+    background-color: #fff;
+    border: 3px solid #fff;
+}
+
 .circle3 {
     width: 8rem;
     height: 8rem;
@@ -276,6 +313,10 @@ body {
     position: relative;
     left: calc((100% - 8rem) / 2);
     top: 1rem;
+}
+
+.circle3--color {
+    border: 3px solid #fff;
 }
 
 .price {
@@ -303,6 +344,10 @@ body {
     letter-spacing: -1px;
 }
 
+.cardTitle--color {
+    color: #fff;
+}
+
 .cardText__wrapper{
     margin-top: 3rem;
     margin-bottom: 2rem;
@@ -324,7 +369,7 @@ body {
 }
 
 .cardButton {
-    background-color: #24baa0;;
+    background-color: #24baa0;
     width: 35%;
     margin: auto;
     border-radius: 10px;
@@ -335,9 +380,16 @@ body {
     right: 7rem;
 }
 
+.cardButton--color {
+    background-color: #fff;
+}
+
 .buttonText {
     color: white;
     text-decoration: none;
     display: inline-block;
 }
 
+.buttonText--color {
+    color: #24baa0;
+}
