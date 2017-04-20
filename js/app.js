@@ -15,3 +15,16 @@ navAbout.addEventListener('mouseout', function() {
     dropDown.classList.remove('visible');
     dropDown.classList.add('unvisible');
 });
+
+var fotoSectionItem = document.getElementsByClassName('fotoSection__item');
+// console.log(fotoSectionItem);
+
+
+for(var i = 0; i < fotoSectionItem.length; i++) {
+    fotoSectionItem[i].addEventListener('mouseover', function() {
+        this.firstElementChild.classList.add('unvisible');
+    });
+    fotoSectionItem[i].addEventListener('mouseout', function() {
+        this.firstElementChild.classList.remove('unvisible');
+    });
+}
