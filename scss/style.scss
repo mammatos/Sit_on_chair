@@ -178,11 +178,17 @@ body {
 .arrow {
     font-size: 5rem;
     color: #24baa0;
-    position: absolute;
+    // position: absolute;
 }
 
 .arrowLeft {
-    bottom: 9rem;
+    float: left;
+    margin-top: 5rem;
+}
+
+.arrowRight {
+    float: right;
+    margin-top: 5rem;
 }
 
 .chairSection__image {
@@ -191,16 +197,26 @@ body {
     top: -1rem;
 }
 
+.chairSection__wrapper .visible {
+    display: inline-block;
+}
+
 .chairSection__wrapper {
-    margin-top: 7rem;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
     position: relative;
+}
+
+.chairSection__wrapper img {
+    display: none;
 }
 
 .chairSection__textWrapper {
     width: 30%;
     text-align: center;
-    float: right;
-    margin-right: 15rem;
+    position: absolute;
+    right: 13rem;
+    top: 10rem;
 }
 
 .chairSection__title {
@@ -232,11 +248,6 @@ body {
     text-decoration: none;
     color: #fff;
     font-weight: 400;
-}
-
-.arrowRight {
-    right: 0;
-    bottom: 9rem;
 }
 
 .fotoSection__wrapper {
@@ -290,8 +301,8 @@ body {
     height: 0.5rem;
     display: inline-block;
     position: absolute;
-    top: 36.5rem;
-    right: 15.5rem;
+    top: 3.5rem;
+    right: 11.2rem;
 }
 
 .hoverPart__text {
@@ -314,6 +325,7 @@ body {
     padding: 1.5rem;
     border: 1px solid #E4E4E4;
     height: 16rem;
+    position: relative;
 }
 
 .fotoSection__decoration {
