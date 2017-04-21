@@ -3,11 +3,11 @@ body {
   font-family: Arial, Verdana, sans-serif;
 }
 
-
 .application {
   background-color: #f9f9f9;
   padding:30px 0;
 }
+
 .application h3 {
   color: #575757;
   font-size: 18px;
@@ -17,7 +17,6 @@ body {
   text-align: right;
 }
 
-
 .inline {
   display:inline-block;
   width:300px;
@@ -25,10 +24,10 @@ body {
   vertical-align: top;
 }
 
-
 .form {
   margin-top:50px;
 }
+
 .drop_down_list {
   border:1px solid #8de0d2;
   width: 280px;
@@ -50,6 +49,7 @@ body {
   position: relative;
   padding: 30px 30px 30px 0;
 }
+
 .checkbox input {
   display: block;
   opacity: 0;
@@ -80,6 +80,7 @@ body {
   width: 48px;
   top: 0;
 }
+
 .checkbox label::after {
   background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
   border: 0;
@@ -90,13 +91,13 @@ body {
   display: block;
 }
 
-
 .active {
   background: url('../images/form_ok.jpg');
   width: 48px;
   height: 40px;
 
 }
+
 .inline_text {
   display: inline-block;
   width: 228px;
@@ -105,6 +106,7 @@ body {
   margin-left: 15px;
   color: #aeaeae;
 }
+
 .image_part img{
   margin-top: 110px;
   margin-left: 38px;
@@ -143,6 +145,7 @@ body {
   border-radius: 8px;
   text-decoration: none;
 }
+
 .panel_left {
   display: inline-block;
   width: 185px;
@@ -181,6 +184,7 @@ body {
   color: #24baa0;
   margin-top:10px;
 }
+
 .sum_label{
   display: inline-block;
   width: 185px;
@@ -225,6 +229,7 @@ body {
   top: 54px;
   display:none;
 }
+
 .list_panel li {
   margin-top:10px;
   cursor: pointer;
@@ -233,4 +238,10 @@ body {
 
 .title {
   height: 30px;
+}
+
+/*New code*/
+
+.visible {
+  display: block;
 }
