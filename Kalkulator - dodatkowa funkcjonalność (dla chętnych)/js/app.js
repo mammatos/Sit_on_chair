@@ -56,12 +56,19 @@ var itemsTypeOfChair = typeOfChair.children;
 var itemsColorOfChair = colorOfChair.children;
 var itemsPatternOfChair = patternOfChair.children;
 
+var costType = 200;
+var costDetails = 0;
+var costTransport = 80;
+var sumOrder = document.getElementById('sumOrder');
+
 
 for(var i = 0; i < itemsTypeOfChair.length; i++) {
     itemsTypeOfChair[i].addEventListener('click', function() {
         var itemType = this;
 
         filler.innerText = itemType.innerText;
+        
+
         //This loop is for pick type of chair and send this type to summary panel
     });
 }
