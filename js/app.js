@@ -1,6 +1,5 @@
     
 document.addEventListener('DOMContentLoaded', function() { 
-    console.log("działa");
     var navAbout = document.getElementById('navItemAbout');
     var dropDown = document.getElementById('navItemAbout__dropDown');
 
